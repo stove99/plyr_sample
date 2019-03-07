@@ -1,4 +1,8 @@
 # 샘플 소스
+ * 동영상 플레이 위치 변경 않되도록 (disable seek)
+ * 시청중인 동영상 위치 파악 (currentTime)
+ * 특정 위치에서 플레이 되도록
+ * 동영상 재생이 끝났을때 이벤트 처리
 ```html
 <!DOCTYPE html>
 <html lang='ko'>
