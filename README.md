@@ -1,5 +1,5 @@
 # 샘플 소스
-```
+```html
 <!DOCTYPE html>
 <html lang='ko'>
 <head>
@@ -25,7 +25,9 @@
 
     <p>현재 플레이 위치 : <span id='current'></span></p>
     <p><a id='go_btn'>3분 55초 부터 시작하기</a></p>
-    <p>참고사이트 : <a href='https://github.com/sampotts/plyr' target="_blank">https://github.com/sampotts/plyr</a></p>
+    <p>참고사이트 : 
+        <a href='https://github.com/sampotts/plyr' target="_blank">https://github.com/sampotts/plyr</a>
+    </p>
 
     <script src='./dist/plyr.polyfilled.min.js'></script>
 
@@ -48,7 +50,8 @@
         });
 
         player.on('timeupdate', function(e) {
-            document.getElementById('current').textContent = e.detail.plyr.currentTime + ' / ' + player.duration;
+            document.getElementById('current').textContent = e.detail.plyr.currentTime 
+                                                                + ' / ' + player.duration;
         });
 
         player.on('ended', function(e) {
