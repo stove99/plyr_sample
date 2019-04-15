@@ -6,11 +6,11 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>비디오 예제</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='./dist/plyr.css' />
 
     <style>
-        #container {width: 800px;}
-        #go_btn {cursor: pointer; color: tomato}
+        #container {width: 800px;margin : 0 auto;}
 
         /*프로그레스바 클릭안되게 처리*/
         .plyr__progress{ pointer-events: none; }
@@ -19,11 +19,13 @@
 <body>
     <div id='container'>
         <div id='player' data-plyr-provider='youtube' data-plyr-embed-id='CNeNwplE_aw'></div>
+        
+        <p>현재 플레이 위치 : <span id='current'></span></p>
+        <p><button id='go_btn' type='button' class='btn btn-primary'>3분 55초 부터 시작하기</button></p>
+        <p>참고사이트 :
+            <a href='https://github.com/sampotts/plyr' target="_blank">https://github.com/sampotts/plyr</a>
+        </p>
     </div>
-
-    <p>현재 플레이 위치 : <span id='current'></span></p>
-    <p><a id='go_btn'>3분 55초 부터 시작하기</a></p>
-    <p>참고사이트 : <a href='https://github.com/sampotts/plyr' target="_blank">https://github.com/sampotts/plyr</a></p>
 
     <script src='./dist/plyr.polyfilled.min.js'></script>
 
